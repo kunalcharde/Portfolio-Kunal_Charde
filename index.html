@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kunal Charde</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f34755814d.js" crossorigin="anonymous"></script>
+    <script src="index.js" type="module"></script>
+
 </head>
 
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="/images/logo.png" alt="logo" class="logo">
+                 <h2 class="logo">KC.</h2>
                 <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -35,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="./images/user.png">
+                    <img src="./images/user.png"> 
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -48,58 +49,24 @@
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Professional Skills</span><br><br>
-                                <div class="box">
-                                    <h4>Java</h4>
-                                    <span class="percentage">
-                                        <div style="width: 50%"></div>
-                                    </span>
-                                </div>
-                                <div class="box">
-                                    <h4>HTML</h4>
-                                    <span class="percentage">
-                                        <div style="width: 85%"></div>
-                                    </span>
-                                </div>
-                                <div class="box">
-                                    <h4>CSS</h4>
-                                    <span class="percentage">
-                                        <div style="width: 85%"></div>
-                                    </span>
-                                </div>
-                                <div class="box">
-                                    <h4>JavaScript</h4>
-                                    <span class="percentage">
-                                        <div style="width: 75%"></div>
-                                    </span>
-                                </div>
-                                <div class="box">
-                                    <h4>React</h4>
-                                    <span class="percentage">
-                                        <div style="width: 15%"></div>
-                                    </span>
-                                </div>
-
-                            </li>
-                            <!-- <li><span>Web Development</span><br> Web App Development</br></li>
-                                <li><span>App Development</span><br> Building Android/ios Apps</br></li> -->
-
-
-                        </ul>
+                        <div>
+                            <span style="color:#275ef3 ;font-size:16px" >Professional Skills</span><br><br>
+                                <div class="skill-container">
+                                    <!-- Skills Will be Display through index.js -->
+                            </div> 
+                        </div>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>AccioJob</span><br><br> Trainee Full-Stack Developer</br></li>
-                            <!-- <li><span>Web Development</span><br> Web App Development</br></li>
-                                <li><span>App Development</span><br> Building Android/ios Apps</br></li> -->
+                            <li><span style="color:#275ef3 ;font-size:16px">AccioJob</span><br></li>
+                            <li>Trainee Frontend-Developer</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
-                        <ul>
-                            <li> B.E. in Elctronics & Communication</br><br><span>2018-22</span><br><br></li>
-                            <li> Higher Secondary School Certificate (H.S.C.)</br><br><span>2017-18</span><br><br></li>
-                            <li> Secondary School Certificate (S.S.C.)</br><span>2015-16</span></li>
+                        <ul >
+                            <li> <span style="color:#275ef3 ;font-size:16px;font-weight: 400; ">B.E. in Elctronics & Communication</span></br><span >2018-22</span><br><br></li>
+                            <li> <span style="color:#275ef3 ;font-size:16px;font-weight: 400 ">Higher Secondary School Certificate (H.S.C.)</span></br><span>2017-18</span><br><br></li>
+                            <li> <span style="color:#275ef3 ;font-size:16px;font-weight: 400 ">Secondary School Certificate (S.S.C.)</span></br><span>2015-16</span></li>
                         </ul>
                     </div>
                 </div>
@@ -114,21 +81,21 @@
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
+                    <h2>Website Design</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic similique deleniti temporibus autem
                         aliquid quasi. Veniam quam non vel similique!</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
+                    <h2>UI Design</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic similique deleniti temporibus autem
                         aliquid quasi. Veniam quam non vel similique!</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
+                    <h2>Web App Design</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic similique deleniti temporibus autem
                         aliquid quasi. Veniam quam non vel similique!</p>
                     <a href="#">Learn more</a>
@@ -141,91 +108,12 @@
 
     <!---porfolio-->
     <div id="portfolio">
-        <div class="container"> <!--Container-->
+        <div class="container"> 
             <h1 class="sub-title">My Work</h1>
-            <div class="work-list"><!---Box-Container-->
-                <div class="work"> <!--Box-->
-                    <img src="images/work-1.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, magni eum commodi beatae,
-                            omnis laboriosam, recusandae nesciunt placeat debitis suscipit est vero sequi error iusto!
-                        </p>
-                        <a href="#"><i class="fa-regular fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, dolorum doloribus dicta
-                            suscipit a quibusdam, molestias, distinctio ducimus quas fuga voluptate dolores praesentium
-                            deleniti omnis?</p>
-                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt accusamus officia aperiam
-                            voluptatum? Quo, consectetur? Quisquam quod sequi totam explicabo perspiciatis suscipit odio
-                            ipsum doloribus.</p>
-                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt accusamus officia aperiam
-                            voluptatum? Quo, consectetur? Quisquam quod sequi totam explicabo perspiciatis suscipit odio
-                            ipsum doloribus.</p>
-                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt accusamus officia aperiam
-                            voluptatum? Quo, consectetur? Quisquam quod sequi totam explicabo perspiciatis suscipit odio
-                            ipsum doloribus.</p>
-                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt accusamus officia aperiam
-                            voluptatum? Quo, consectetur? Quisquam quod sequi totam explicabo perspiciatis suscipit odio
-                            ipsum doloribus.</p>
-                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt accusamus officia aperiam
-                            voluptatum? Quo, consectetur? Quisquam quod sequi totam explicabo perspiciatis suscipit odio
-                            ipsum doloribus.</p>
-                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt accusamus officia aperiam
-                            voluptatum? Quo, consectetur? Quisquam quod sequi totam explicabo perspiciatis suscipit odio
-                            ipsum doloribus.</p>
-                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+            <div class="work-list">
+                <!-- Projects will render from index.js -->
             </div>
-            <a class="btn" id="seemorebtn">See More</a>
+            <button class="btn" id="seemorebtn" onclick="toogle()" value="seemore">See More</button>
         </div>
     </div>
     <!-- contact -->
@@ -234,13 +122,13 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>kunalCharde1@gmail.com</p>
-                    <p><i class="fa fa-phone-square-alt"></i>+917038208023</p>
+                    <p><i class="fas fa-paper-plane"></i>kunalcharde1@gmail.com</p>
+                    <p><i class="fa fa-phone-square-alt"></i>+91 7038208023</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href=""><i class="fab fa-twitter-square"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/kunalcharde" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/kunalcharde24/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kunal-charde-226891214/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                     <a href="./images/Kunal Charde-Full Stack Developer.pdf" download class="btn btn2">Download CV</a>
                 </div>
@@ -274,8 +162,7 @@
             document.getElementById(tabname).classList.add("active-tab");
         }   
     </script>
-    <script src="index.js"></script>
-     
+    <script src="https://kit.fontawesome.com/f34755814d.js" crossorigin="anonymous"></script>
+     <script src="function.js"></script>
 </body>
-
 </html>
