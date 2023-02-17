@@ -72,52 +72,53 @@ myskills.innerHTML = ShowHtml.join("")
 
 const Projects =[
     {
-       title: 'Social Media App',
-       desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, magni eum commodi beatae,omnis laboriosam, recusandae nesciunt placeat debitis suscipit est vero sequi error iusto!',
-       deploy_url : '#',
+       title: 'Workplace Webapp',
+       desc : 'It is a Platform where user can post and search the job on the basies of candidate Login and Employer Login',
+       deploy_url : 'https://github.com/kunalcharde/workplace',
        img_url : 'images/work-1.png'
     },
     {
+      title: 'Todo Application',
+      desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, magni eum commodi beatae,omnis laboriosam, recusandae nesciunt placeat debitis suscipit est vero sequi error iusto!',
+      deploy_url : 'https://kunalcharde.github.io/TODO-APP/',
+      img_url : 'images/work-3.png'
+   },
+    {
        title: 'Weather Application',
-       desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, magni eum commodi beatae,omnis laboriosam, recusandae nesciunt placeat debitis suscipit est vero sequi error iusto!',
-       deploy_url : '#',
+       desc : 'Token Based Login and Rendering Entered locations Weather Details',
+       deploy_url : 'https://kunalcharde.github.io/Weather-APP/',
        img_url : 'images/work-2.png'
     },
+    
     {
-       title: 'Music Application',
+       title: 'Post Office Locator',
        desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, magni eum commodi beatae,omnis laboriosam, recusandae nesciunt placeat debitis suscipit est vero sequi error iusto!',
-       deploy_url : '#',
-       img_url : 'images/work-3.png'
-    },
-    {
-       title: 'Work Place',
-       desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, magni eum commodi beatae,omnis laboriosam, recusandae nesciunt placeat debitis suscipit est vero sequi error iusto!',
-       deploy_url : '#',
-       img_url : 'images/work-2.png'
+       deploy_url : 'https://kunalcharde.github.io/Post-office-Locator/',
+       img_url : 'images/work-4.png'
     },
     {
        title: 'Todo Application',
        desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, magni eum commodi beatae,omnis laboriosam, recusandae nesciunt placeat debitis suscipit est vero sequi error iusto!',
        deploy_url : '#',
-       img_url : 'images/work-2.png'
+       img_url : 'images/work-6.png'
     },
     {
        title: 'Social Media App',
        desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, magni eum commodi beatae,omnis laboriosam, recusandae nesciunt placeat debitis suscipit est vero sequi error iusto!',
        deploy_url : '#',
-       img_url : 'images/work-2.png'
+       img_url : 'images/work-7.png'
     },
     {
        title: 'Social Media App',
        desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, magni eum commodi beatae,omnis laboriosam, recusandae nesciunt placeat debitis suscipit est vero sequi error iusto!',
        deploy_url : '#',
-       img_url : 'images/work-2.png'
+       img_url : 'images/work-7.png'
     },
     {
        title: 'Social Media App',
        desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, magni eum commodi beatae,omnis laboriosam, recusandae nesciunt placeat debitis suscipit est vero sequi error iusto!',
        deploy_url : '#',
-       img_url : 'images/work-2.png'
+       img_url : 'images/work-7.png'
     }
 ]
 
@@ -130,7 +131,7 @@ const project_Html = Projects.map((project) => {
         <div class="layer">
             <h3>${project.title}</h3>
             <p> ${project.desc}</p>
-            <a href="${project.deploy_url}"><i class="fa-regular fa-up-right-from-square"></i></a>
+            <a href="${project.deploy_url}" target = "_blank"><i class="fa-regular fa-up-right-from-square"></i></a>
          </div>
     </div>
     `
