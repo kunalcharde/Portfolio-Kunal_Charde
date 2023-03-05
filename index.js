@@ -74,7 +74,7 @@ const Projects =[
     {
        title: 'Workplace Webapp',
        desc : 'It is a Platform where user can post and search the job on the basies of candidate Login and Employer Login',
-       deploy_url : 'https://github.com/kunalcharde/workplace',
+       deploy_url : 'https://workplace-nu.vercel.app/',
        img_url : 'images/work-1.png'
     },
     {

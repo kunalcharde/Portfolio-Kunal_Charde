@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* color: black; */
+}
+
+.card-conatiner {
+  display: flex;
+}
+.profile-card {
+  position: relative;
+  margin: auto;
+  padding: 30px;
+  width: 420px;
+  height: 550px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  transition: height 0.5 ease;
+}
+.heart {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.heart > i {
+  color: rgba(226, 14, 14, 0.8);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.profile-card-img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 40px;
+  transform: translateY(0%);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease-out;
+}
+.profile-card-img img {
+  width: 100%;
+}
+.profile-card-info {
+  margin-top: 15px;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 40px;
+  transform: translateY(0%);
+  transition: transform 1s ease-out;
+}
+.profile-card-name {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+.profile-card-job-name {
+  font-size: 16px;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  font-weight: 500;
+  opacity: 0.8;
+  letter-spacing: 1.5px;
+}
+.profile-card-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.profile-card-location-icon {
+  font-size: 22px;
+  margin-right: 8px;
+}
+.profile-card-stt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: flex-start;
+  margin-top: 35px;
+}
+.profile-card-stt-item {
+  text-align: center;
+  padding: 10px 35px;
+  min-width: 120px;
+}
+.profile-card-stt-cnt {
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  /* text-align: center; */
+}
+.profile-card-stt-title {
+  font-weight: 500;
+  margin-top: 7px;
+  white-space: nowrap;
+  opacity: 0.8;
+  letter-spacing: 1.5px;
+}
+.profile-card-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-card-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  width: 300px;
+  height: 60px;
+  border-radius: 80px;
+  padding: 0 18px;
+  will-change: transform;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile-card-button:hover {
+  transform: scale(1.1);
+}
+.profile-card-button:hover i:hover {
+  font-size: 28px;
+  color: #0078d7;
+  transition: font-size 0.2s;
+}
+.profile-card-button span {
+  position: absolute;
+  z-index: 99;
+  width: 300px;
+  height: 50px;
+  border-radius: 80px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #eeeeed;
+  background-color: #ff004f;
+  opacity: 0.8;
+  padding: 0 18px;
+  transition: all 1.2s ease;
+  font-weight: 500;
+}
+.profile-card-button:hover span {
+  transform: translateX(-300px);
+  transition-delay: 0.15s;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 64px;
+  border-radius: 80px;
+}
+.social-icons > i {
+  opacity: 0;
+  font-size: 24px;
+  transform: scale(0.1);
+  transition: all 0.3s ease;
+}
+.profile-card-button:hover i {
+  opacity: 1;
+  transform: scale(1);
+}
+.social-icons > i:nth-of-type(5) {
+  transition-property: opacity, transform;
+  transition-delay: 0.3s;
+}
+.social-icons > i:nth-of-type(4) {
+  transition-property: opacity, transform;
+  transition-delay: 0.4s;
+}
+.social-icons > i:nth-of-type(3) {
+  transition-property: opacity, transform;
+  transition-delay: 0.5s;
+}
+.social-icons > i:nth-of-type(2) {
+  transition-property: opacity, transform;
+  transition-delay: 0.6s;
+}
+
+.social-icons > i:nth-of-type(1) {
+  transition-property: opacity, transform;
+  transition-delay: 0.7s;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-card {
+    margin-top: 20px;
+    width: 300px;
+    height: 400px;
+  }
+  .profile-card-img {
+    width: 100px;
+    height: 100px;
+  }
+  .heart {
+    right: 50px;
+  }
+  .profile-card-img {
+    margin-top: 0;
+  }
+  .profile-card-stt {
+    margin-top: 10px;
+  }
+  .profile-card-stt-item {
+    text-align: center;
+    padding: 10px 20px;
+    min-width: 90px;
+  }
+}

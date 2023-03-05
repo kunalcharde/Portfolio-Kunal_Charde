@@ -8,6 +8,7 @@
 body {
   background: #080808;
   color: #fff;
+  font-family: "Jost,sans-serif";
 }
 
 #header {
@@ -20,14 +21,20 @@ body {
 }
 
 .container {
+  width: 100%;
+  height: 100%;
   padding: 10px 10%;
 }
 
 nav {
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: fixed;
+  padding: 10px;
+  
 }
 
 .logo {
@@ -64,8 +71,17 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+.header-conatiner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 .header-text {
-  margin-top: 20%;
+  /* margin-top: 20%; */
+  width: 60%;
   font-size: 30px;
 }
 
@@ -422,12 +438,10 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px) {
-  #header {
-    background-image: url(./images/phone-background.png);
-  }
-
+ 
   .header-text {
-    margin-top: 100%;
+    margin-top: 20%;
+    width:100%;
     font-size: 16px;
   }
 
